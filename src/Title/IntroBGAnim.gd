@@ -79,7 +79,7 @@ func _physics_process(delta: float) -> void:
 			 
 		timer = 0
 
-func pulse(object, color = Color.blue, scale:= Vector2(16,16), fade := true, duration = 1,tween_dur = 1,kill = false) -> void:
+func pulse(object, color = Color.blue, scale:= Vector2(16,16), fade := true, duration = 1, tween_dur = 1, _kill = false) -> void:
 	object.scale = Vector2.ZERO
 	object.modulate = color
 	object.visible = true
@@ -87,7 +87,7 @@ func pulse(object, color = Color.blue, scale:= Vector2(16,16), fade := true, dur
 	pulse_tween.tween_property(object,"scale",scale,tween_dur).set_ease(Tween.EASE_OUT)
 	if fade:
 		pulse_tween.tween_property(object,"modulate",Color.black,duration)
-func alt_pulse(object, color = Color.blue, fade := true, duration = 1,tween_dur = 1,kill = false) -> void:
+func alt_pulse(object, color = Color.blue, fade := true, duration = 1, tween_dur = 1, _kill = false) -> void:
 	object.scale = Vector2.ZERO
 	object.modulate = color
 	object.visible = true

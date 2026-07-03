@@ -16,7 +16,6 @@ var finished := false
 func next_step() -> void:
 	step += 1
 	timer = 0
-	print_debug("Going to step " + str(step))
 
 func _input(event: InputEvent) -> void:
 	if not finished:
@@ -24,7 +23,6 @@ func _input(event: InputEvent) -> void:
 			skip()
 
 func skip() -> void:
-	print_debug("Ending Intro and going to Main Menu")
 	capcom_sound.volume_db = -80
 	finished = true
 	set_physics_process(false)

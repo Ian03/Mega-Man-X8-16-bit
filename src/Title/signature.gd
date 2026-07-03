@@ -26,7 +26,7 @@ func activate() -> void:
 	enter_by()
 	Tools.timer(1.0,"appear",self)
 	Tools.timer(2.5,"set_able_to_exit",self)
-	Tools.timer(6,"fade",self)
+	Tools.timer(6,"fade_signature",self)
 	Tools.timer(6,"fade_by",self)
 
 func enter_by():
@@ -46,7 +46,7 @@ func set_able_to_exit():
 func fade_by():
 	tween.attribute("modulate",Color.black,2.0,by)
 	
-func fade():
+func fade_signature():
 	tween.attribute("modulate",color2,.7)
 	tween.add_attribute("modulate",color1,.7)
 	tween.add_callback("fadeout")

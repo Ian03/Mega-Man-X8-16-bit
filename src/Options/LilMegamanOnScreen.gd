@@ -21,11 +21,11 @@ func _on_focus(option) -> void:
 	frame = 0
 	play("recover")
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if visible != menu.visible:
 		visible = menu.visible
 
-func _on_pressed(option) -> void:
+func _on_pressed(_option) -> void:
 	shot.visible = true
 	shot.position = initial_shot_pos
 	

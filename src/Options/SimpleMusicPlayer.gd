@@ -17,10 +17,8 @@ func play_loop() -> void:
 		play()
 
 func fade_out() -> void:
-	print_debug("Starting song fadeout")
 	var t = create_tween()
 	t.tween_property(self,"volume_db",-80,1.5)
 
 func play(from_position: float = 0.0) -> void:
-	print_debug("playing")
-	.play()
+	.play(from_position)

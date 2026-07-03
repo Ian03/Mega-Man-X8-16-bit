@@ -15,10 +15,10 @@ func _ready() -> void:
 	InputManager.connect("double_check",self,"check_for_doubles")
 	InputManager.connect("double_detected",self,"double_warning")
 
-func check_for_doubles(new_button_text,_action):
+func check_for_doubles(_new_button_text, _action):
 	pass
 	
-func double_warning(double_button_text, action):
+func double_warning(_double_button_text, _action):
 	pass
 
 func _process(delta: float) -> void:
