@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "godot": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "C:\\Users\\jiann\\mcp-servers\\godot-mcp\\build\\index.js"
+      ],
+      "env": {
+        "GODOT_PATH": "D:\\Deverlop\\Godot\\GDScript 3.5\\Godot_v3.5-stable_win64.exe",
+        "DEBUG": "false"
+      }
+    }
+  }
+}
